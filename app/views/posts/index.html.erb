@@ -1,7 +1,0 @@
-<% @posts.each do |post| %>
-<%= image_tag (post.image.url(:small)) %>
-<h2><%= link_to post.title, post  %>
-<% end %>
-
-<p>
-<%= link_to "Add New Inspiration", new_post_path %>
