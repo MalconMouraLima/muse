@@ -1,16 +1,16 @@
 - if user_signed_in?
 	%p#intro
-		Hello
+		Olá
 		= current_user.name
 		%br/
 		%span
-			Share your inspiration and see what's inspiring others.
+			Compartilhe suas inspirações...
 - else
 	%p#intro
 		What's your muse?
 		%br/
 		%span
-			Share your inspiration and see what's inspiring others.
+			Compartilhe suas inspirações...E inspiri outros...
 #posts
 	- @posts.each do |post|
 		.post
@@ -21,7 +21,7 @@
 					%h2= link_to post.title, post
 				.data.clearfix
 					%p.username
-						Shared by
+						Compartilhado por
 						= post.user.name
 					%p.buttons
 						%span
